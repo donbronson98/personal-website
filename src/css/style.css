@@ -1,0 +1,336 @@
+/* FONTS */
+
+/*Regular*/
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;            /** 400 = normal; 700 = bold */
+}
+
+/* Italic */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-Italic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Bold Italic*/
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-BoldItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-ExtraBold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bolder;
+}
+
+/* Extra Bold Italic */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-ExtraBoldItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* Light */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-Light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: lighter;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: "Nunito";
+    src:    url(../fonts/Nunito-LightItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* FONT AWESOME */
+@font-face {
+    font-family: "Awesome";
+    src:    url(/src/fonts/fa-regular-400.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* ALLGEMEINES */
+* {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Nunito', 'Arial', sans-serif;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.chevron {
+    font-family: "Awesome";
+    font-style: normal;
+    font-weight: normal;
+    color: #303030;
+}
+
+.chevron-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.50rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    animation: goingDown 2.5s ease-in-out 0s infinite;
+}
+
+.chevron-double-down {
+    transform: translateY(10px);
+    animation: goingDown 2.5s ease-in-out 0s infinite;
+}
+
+.arrow-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 32px;
+    height: 32px;
+}
+
+/* ANIMATIONS */
+@keyframes goingDown {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(0px);}
+}
+
+/* CONTAINER */
+.container {
+    min-height: calc(100vh - 8rem); /*100vh - container padding*/
+}
+
+/* MENU */
+.menu {
+    height: 50vh;
+    position: fixed;
+    top: calc(50vh/2);
+    left: 30px;
+    border-left: 3px solid #000;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    justify-content: space-around;
+}
+
+.menu-container > a {
+    mix-blend-mode: difference;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.menu-item {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    width: 135px;
+    transition: all;
+}
+
+.menu-item:hover {
+    letter-spacing: 1px;
+    transition: letter-spacing 0.5s;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header > div {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    height: auto;
+}
+
+#header-logo {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+#header-logo:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+
+/* FIRST SECTION */
+#first-section {
+    background-color: #FFF;
+}
+
+#first-section > .container {
+    min-height: calc(100vh - 50px - 10rem); /*100vh - container padding*/
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 30% 50%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #303030;
+    border-radius: 15px 15px;
+}
+
+.icon-container > a {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.icon-container > a:hover {
+    opacity: 0.5;
+    transform: translateY(-3px);
+    transition: opacity 0.5s;
+    transition: transform 0.5s;
+}
+
+.icon-container > a > img {
+    display: block;
+    width: 25px;
+    height: auto;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#ctc-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+/* SECOND SECTION */
+#second-section {
+    color: #FFF;
+    background-color: #303030;
+}
+
+#second-section > .container {
+    min-height: calc(100vh - 8rem); /*100vh - container padding*/
+}
+
+/* THIRD SECTION */
+#third-section {
+    background-color: #FFF;
+}
+
+/* FOURTH SECTION */
+#fourth-section {
+    background-color: #303030;
+}
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #303030;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.topfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topfooter > a > img {
+    display: block;
+    width: 70px;
+    height: auto;
+}
+
+.topfooter > a > img:hover {
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+
+.underfooter {
+    background-color: #303030;
+}
+
+.underfooter > p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 450px) {
+
+}
