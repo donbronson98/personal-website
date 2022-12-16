@@ -80,12 +80,27 @@
     font-family: 'Nunito', 'Arial', sans-serif;
 }
 
+p {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 a, a:link, a:visited, a:active {
     text-decoration: none;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -93,11 +108,77 @@ a, a:link, a:visited, a:active {
     padding-bottom: 4rem;
 }
 
+.row {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+#second-section .row img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 20px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(5px 5px 20px rgb(0, 0, 0));
+}
+
+.column-100 {
+    flex: 100;
+    align-self: stretch;
+    padding: 3rem 3rem;
+}
+
+.column-50-l {
+    flex: 50%;
+    padding: 3rem 3rem;
+}
+
+.column-50-r {
+    flex: 50%;
+    padding: 3rem 3rem;
+}
+
+hr {
+    width: 50%;
+}
+
+.hr-black {
+    width: 50%;
+    height: 2px;
+    border: none;
+    color: #000;
+    background-color: #000;
+}
+
 .chevron {
     font-family: "Awesome";
     font-style: normal;
     font-weight: normal;
     color: #303030;
+}
+
+.chevron-container-black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.50rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    animation: goingDown 2.5s ease-in-out 0s infinite;
+}
+
+.chevron-container-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.50rem;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    animation: goingDown 2.5s ease-in-out 0s infinite;
 }
 
 .chevron-container {
@@ -168,7 +249,8 @@ a, a:link, a:visited, a:active {
     color: #FFF;
     text-align: center;
     width: 135px;
-    transition: all;
+    letter-spacing: 0;
+    transition: letter-spacing 0.5s;
 }
 
 .menu-item:hover {
@@ -199,6 +281,8 @@ header > div {
     display: block;
     width: 150px;
     height: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 #header-logo:hover {
@@ -244,13 +328,15 @@ header > div {
 .icon-container > a {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+    opacity: 1;
+    transform: none;
+    transition: all 0.5s;
 }
 
 .icon-container > a:hover {
     opacity: 0.5;
     transform: translateY(-3px);
-    transition: opacity 0.5s;
-    transition: transform 0.5s;
+    transition: all 0.5s;
 }
 
 .icon-container > a > img {
@@ -266,7 +352,7 @@ header > div {
     margin-top: 1rem;
 }
 
-#ctc-text {
+.ctc-text {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -285,11 +371,57 @@ header > div {
 
 /* THIRD SECTION */
 #third-section {
+    min-height: 0;
     background-color: #FFF;
 }
 
-/* FOURTH SECTION */
-#fourth-section {
+#third-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+#third-section hr {
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.skill-container > img {
+    width: 48px;
+    margin-right: 1rem;
+}
+
+.bar {
+    height: 10px;
+    margin-right: 1rem;
+}
+
+#html-bar {
+    width: 100%;
+    background-color: #303030;
+}
+
+#css-bar {
+    width: 100%;
+    background-color: #303030;
+}
+
+#java-bar {
+    width: 80%;
+    background-color: #303030;
+}
+
+#js-bar {
+    width: 70%;
     background-color: #303030;
 }
 
@@ -310,6 +442,8 @@ header > div {
     display: block;
     width: 70px;
     height: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .topfooter > a > img:hover {
@@ -331,6 +465,36 @@ header > div {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1350px) {
+    .menu {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    #second-section .row img {
+        width: 75%;
+    }
+
+    .column-50-l {
+        padding: 1rem 1rem;
+    }
+
+    .column-50-r {
+        padding: 1rem 1rem;
+    }
+
+    .column-100 {
+        padding: 1rem 1rem;
+    }
+
+    .skill-container {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 450px) {
 
 }

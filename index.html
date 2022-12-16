@@ -18,8 +18,7 @@
         <div class="menu-container">
             <a href="#first-section" class="menu-item">Start.</a>
             <a href="#second-section" class="menu-item">My work.</a>
-            <a href="#third-section" class="menu-item">Skills.</a>
-            <a href="#fourth-section" class="menu-item">Education.</a>
+            <a href="#third-section" class="menu-item">About me.</a>
         </div>
     </div>
 
@@ -54,9 +53,9 @@
                 </div>
                 <p class="intro-text">Hey i'm Sascha! ✌🏻</p>
                 <p class="intro-text">Welcome to my personal website.</p>
-                <p id="ctc-text">Look at what i've done</p>
+                <p class="ctc-text">Look at what i've done</p>
                 <a href="#second-section">
-                    <div class="chevron-container">
+                    <div class="chevron-container-black">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="chevron-double-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -69,33 +68,117 @@
 
     <div id="second-section">
         <div class="container">
-            <div class="boxed-container">
-                
+            <div class="row">
+                <div class="column-50-l">
+                    <img src="src/img/top5broker_image.PNG" alt="Top-5-Broker image">
+                </div>
+                <div class="column-50-r">
+                    <h2>Top 5 Broker</h2>
+                    <hr>
+                    <p>
+                        Top-5-Broker.de was one of my first fun projects. It is an broker comparison website with affiliate links. 
+                        My interest in stocks and economy was the main reason for this project. In addition it was my first project 
+                        using raw HTML, CSS and JavaScript so it was good learning procedure for me.
+                    </p>
+                    <p><b>Used technologies:</b> HTML, CSS & JavaScript</p>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="column-50-l">
+                    <h2>presen2er.de</h2>
+                    <hr>
+                    <p>
+                        This one was my first commercial project. Melissa, a self employed communication manager, wished a simple and 
+                        modern website for her new started business. I choosed wordpress and elementor as technologies so she could manage 
+                        the website easily by herself after the finalization of the project. The project helped me a lot in improving my 
+                        working structure and communication with a real customer.
+                    </p>
+                    <p><b>Used technologies:</b> Wordpress, Elementor & CSS</p>
+                </div>
+                <div class="column-50-r">
+                    <img src="src/img/presen2er_image.PNG" alt="presen2er image">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-50-l">
+                    <img src="src/img/leaguerecap_image.png" alt="League recap image">
+                </div>
+                <div class="column-50-r">
+                    <h2>League Recap</h2>
+                    <hr>
+                    <p>
+                        I created a functional website for one of my all time favourite game: League of Legends. The website creates a recap 
+                        of the current year with useful facts and informations about your personal gaming year. The main framework for this 
+                        project was the League of Legends API provided by Riot. It was my first project using an API and using JavaScript in 
+                        a more technical way.
+                    </p>
+                    <p><b>Used technologies:</b> HTML, CSS, JavaScript & Riot API</p>
+                </div>
+            </div>
+
+            <hr>
+            <p>All projects can be found on my github profile.</p>
+            <hr>
+
+            <p class="ctc-text">Learn more about me</p>
+
+            <a href="#third-section">
+                <div class="chevron-container-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FFF" class="chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+            </a>
         </div>
     </div>
 
     <div id="third-section">
-        <div class="container">
-            <p>test</p>
+        <div class="container" id="third-section">
+            <div class="row">
+                <div class="column-100">
+                    <h2>Sascha.</h2>
+                    <h2>24 years old.</h2>
+                    <h2>Self taught webdeveloper.</h2>
+                    <hr class="hr-black">
+                    <div class="skills">
+                        <div class="skill-container">
+                            <img src="src/img/html5.png" alt="html5 image">
+                            <div class="bar" id="html-bar"></div>
+                            <p class="percentage">100%</p>
+                        </div>
+                        <div class="skill-container">
+                            <img src="src/img/css.png" alt="css image">
+                            <div class="bar" id="css-bar"></div>
+                            <p class="percentage">100%</p>
+                        </div>
+                        <div class="skill-container">
+                            <img src="src/img/java.png" alt="java image">
+                            <div class="bar" id="java-bar"></div>
+                            <p class="percentage">80%</p>
+                        </div>
+                        <div class="skill-container">
+                            <img src="src/img/js.png" alt="js image">
+                            <div class="bar" id="js-bar"></div>
+                            <p class="percentage">70%</p>
+                        </div>
+                    </div>
+                    <hr class="hr-black">
+                    <h2>More technologies i've used:</h2>
+                    <h3>Wordpress, Elementor, Divi, Typo3, Adobe applications</h3>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div id="fourth-section">
-        <div class="container">
-            <p>test</p>
-        </div>
-    </div>
-
 
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-
             <div class="topfooter">
                 <a href="index.html"><img src="src/img/favicon_black.png" alt="logo-small"></a>
             </div>
-        
         </div>
         
         <div class="underfooter">
