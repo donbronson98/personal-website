@@ -67,7 +67,7 @@
 /* FONT AWESOME */
 @font-face {
     font-family: "Awesome";
-    src:    url(/src/fonts/fa-regular-400.ttf) format("truetype");
+    src:    url(../fonts/fa-regular-400.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -198,15 +198,17 @@ hr {
     animation: goingDown 2.5s ease-in-out 0s infinite;
 }
 
-.arrow-up-container {
+#arrow-up-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 35px;
+    bottom: 35px;
     width: 32px;
     height: 32px;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 /* ANIMATIONS */
@@ -384,6 +386,8 @@ header > div {
 }
 
 .skills {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 3rem 0;
 }
@@ -391,38 +395,21 @@ header > div {
 .skill-container {
     display: flex;
     align-items: center;
-    width: 70%;
-    margin-bottom: 1rem;
+    width: 200px;
+    padding: 0.5rem 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #303030;
+    border-radius: 10px;
 }
 
 .skill-container > img {
-    width: 48px;
+    width: 32px;
     margin-right: 1rem;
 }
 
-.bar {
-    height: 10px;
-    margin-right: 1rem;
-}
-
-#html-bar {
-    width: 100%;
-    background-color: #303030;
-}
-
-#css-bar {
-    width: 100%;
-    background-color: #303030;
-}
-
-#java-bar {
-    width: 80%;
-    background-color: #303030;
-}
-
-#js-bar {
-    width: 70%;
-    background-color: #303030;
+.skill-label {
+    font-weight: bold;
 }
 
 /* FOOTER */
@@ -488,10 +475,6 @@ header > div {
 
     .column-100 {
         padding: 1rem 1rem;
-    }
-
-    .skill-container {
-        width: 100%;
     }
 }
 
